@@ -14,7 +14,7 @@ h3 {
 }
 
 @media (max-width: 800px) {
-  .body {
+  body {
     box-sizing: border-box;
     height: 400px;
   }
