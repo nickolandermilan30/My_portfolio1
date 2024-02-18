@@ -1,0 +1,80 @@
+.header {
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px #2a2263;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ito ang idinagdag para ang header ay nasa harap ng ibang mga elemento */
+  
+}
+
+
+.header-container {
+  display: flex;
+  max-width: 2200px;
+  padding: 20px 40px;
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-left: auto; 
+}
+
+.header-menu a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  line-height: 20px;
+  font-weight: bold;
+  color: #5e1a41;
+  transition: 0.5s;
+  position: relative;
+  transition: 0.3s;
+}
+
+
+.header-menu a:hover {
+  color: #5e1a41;
+}
+
+
+
+@media (max-width: 800px) {
+  .header-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .header-menu {
+    gap: 20px;
+  }
+  .header-menu a {
+    margin-top: 20px;
+    padding: 8px 10px;
+    background: #fcfcfc;
+    border-radius: 4px;
+    transition: 0.5s;
+    border: 1px solid #fafafa;
+  }
+  .header-container img {
+    display: block;
+    max-width: 200px;
+  }
+  .header-menu a:hover {
+    background: #fafafa;
+    border-bottom: 2px solid #3b1129;
+    color: #5e1a41;
+  }
+  .header-menu a:hover::before {
+    display: none;
+  }
+}

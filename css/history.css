@@ -1,0 +1,397 @@
+
+
+.progress-bar {
+  position: relative;
+  margin-bottom: 10px; 
+}
+
+.progress-label {
+  position: absolute;
+  top: 50%;
+  left: 560px;
+  color: #4440c0;
+  font-family: "Fredoka";
+  width: auto;
+  text-align: center;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.java-bar {
+  color: white;
+  text-align: center;
+  line-height: 20px; 
+  height: 20px;
+  animation: javaBarAnimation 2s ease-in-out forwards;
+  width: 0;
+  background-color: #4440c0;
+  font-family: "Fredoka";
+  letter-spacing: 1px; 
+  font-size: 14px; 
+  border-radius: 40px;
+}
+
+.javascript-bar {
+  color: white;
+  text-align: center;
+  line-height: 20px; 
+  height: 20px;
+  animation: javascriptBarAnimation 2s ease-in-out forwards;
+  width: 0;
+  background-color: #4440c0;
+  font-family: "Fredoka";
+  letter-spacing: 2px;
+  font-size: 14px; 
+  border-radius: 40px;
+}
+
+.htmlcss-bar {
+  color: white;
+  text-align: center;
+  line-height: 20px; 
+  height: 20px;
+  font-size: 14px; 
+  animation: htmlcssBarAnimation 2s ease-in-out forwards;
+  width: 0;
+  background-color: #4440c0;
+  font-family: "Fredoka";
+  letter-spacing: 2px;
+  border-radius: 40px;
+}
+
+.webdesign-bar {
+  color: white;
+  text-align: center;
+  line-height: 20px; 
+  height: 20px;
+  font-size: 14px; 
+  animation: webdesignBarAnimation 2s ease-in-out forwards;
+  width: 0;
+  background-color: #4440c0;
+  font-family: "Fredoka";
+  letter-spacing: 2px;
+  border-radius: 40px;
+}
+
+.uiuxdesign-bar {
+  color: white;
+  text-align: center;
+  line-height: 20px; 
+  height: 20px;
+  font-size: 14px; 
+  animation: uiuxdesignBarAnimation 2s ease-in-out forwards;
+  width: 0;
+  background-color: #4440c0;
+  font-family: "Fredoka";
+  letter-spacing: 2px;
+  border-radius: 40px;
+}
+
+.logodesign-bar {
+  color: white;
+  text-align: center;
+  line-height: 20px; 
+  height: 20px;
+  font-size: 14px; 
+  animation: logodesignBarAnimation 2s ease-in-out forwards;
+  width: 0;
+  background-color: #4440c0;
+  font-family: "Fredoka";
+  letter-spacing: 2px;
+  border-radius: 40px;
+  
+}
+
+@keyframes javaBarAnimation {
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes javascriptBarAnimation {
+  to {
+    width: 25%;
+  }
+}
+
+@keyframes htmlcssBarAnimation {
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes webdesignBarAnimation {
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes uiuxdesignBarAnimation {
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes logodesignBarAnimation {
+  to {
+    width: 40%;
+  }
+}
+
+
+
+ul {
+  list-style-type: none;
+}
+
+
+.sk {
+  position: relative;
+  margin: 0;
+  padding-bottom: 1em;
+  padding-left: 20px;
+}
+
+.sk:before {
+  background-color:#2a2263;
+  width: 2px;
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 5px;
+}
+    
+
+.sk:first-child:before { 
+  top: 15px; 
+ }
+
+.sk:last-child:before {
+   height: 6px;
+   }
+
+.bullet { 
+  margin-left: -20px; 
+  width: 12px; 
+  fill: #2a2263; 
+  float: left; 
+  padding-right: 10px 
+}
+.bullet.big { 
+  width: 16px; 
+  margin-left: -22px; 
+  padding-right: 8px 
+}
+
+a { 
+  color: #06e;
+ }
+
+ .About{
+  font-family: Fredoka;
+  color: black;
+ }
+
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.About {
+  animation: fadeIn 1s ease-out;
+}
+
+
+
+ .bul{
+  font-family: Fredoka;
+  color: #2a2263;
+  
+ }
+
+.history {
+  background: #fff;
+  border-radius: 0px 0px 40px 40px;
+  box-shadow: 0px 2px 4px 0px rgba(100, 114, 71, 0.05);
+}
+
+.history-info {
+  width: 80%;
+  padding: 40px 100px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+
+.history-info::before {
+  content: "";
+  position: absolute;
+  background: url("../assets/sumeru.svg");
+  object-fit: cover;
+  object-position: top center;
+  width: 50px;
+  height: 50px;
+  right: -60px;
+  top: 40px;
+  opacity: 0.2;
+}
+
+.history-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+}
+
+.history img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 0px 0px 0px 40px;
+}
+
+.history-p,
+.history-p-alt {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 40px;
+  max-width: 60ch;
+  padding-top: 20px;
+}
+
+.history-p-alt,
+.history-h2 {
+  text-align: right;
+}
+
+.history-p-alt,
+.history-h1 {
+  text-align: center;
+  animation: bounce 2s infinite;
+}
+
+.history-h1 {
+  font-family: "Fredoka";
+  color: #2a2263;
+  position: relative;
+  letter-spacing: 3px;
+  font-size: 1.4rem;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.history-h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background: #2a2263;
+  top: 40px;
+}
+
+.history-h2 {
+  font-family: "Fredoka";
+  color: #2a2263;
+  position: relative;
+  letter-spacing: 3px;
+  font-size: 1.4rem;
+  line-height: 48px;
+  font-weight: 700;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-10px);
+  }
+}
+
+
+.history-h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background: #2a2263;
+  top: 40px;
+}
+
+@media (max-width: 1600px) {
+  .history-h2 {
+    font-size: 1.25rem;
+  }
+  .history-p,
+  .history-p-alt {
+    font-size: 1.1rem;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .history-info {
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .history-p,
+  .history-p-alt {
+    line-height: 30px;
+    padding-top: 10px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .history-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  .history-info {
+    width: 100%;
+    padding: 0px;
+  }
+  .progress-label {
+    position: absolute;
+    top: 50%;
+    left: 350px;
+  }
+
+  .history img {
+    display: none;
+  }
+  .history-info::before {
+    display: none;
+  }
+  .history-h2 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .history-p,
+  .history-p-alt {
+    padding-top: 10px;
+    line-height: 28px;
+    text-align: left;
+    max-width: 60ch;
+  }
+}

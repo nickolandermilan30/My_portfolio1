@@ -1,0 +1,186 @@
+
+
+.intro {
+  position: relative;
+  height: 600px;
+
+}
+
+.mepic {
+  border: 3px solid #2a2263;
+  border-radius: 50%; 
+  max-width: 100px; 
+  height: 50px;
+}
+
+.intro-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  margin-right: 10px;
+  position: relative;
+  box-sizing: border-box;
+  gap: 290px;
+}
+
+.intro-img {
+  display: block;
+  position: absolute;
+  max-width: 150%;
+  object-fit: contain;
+  grid-column: 2;
+  top: 5px;
+  right: 0px;
+}
+
+.CB{
+  font-weight: bold;
+}
+
+.header-menu a {
+  font-family: "Fredoka";
+  color: #2a2263;
+  letter-spacing:0.1vb ;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+}
+
+
+
+.nickologo {
+  font-family: "Fredoka";
+  color: #2a2263;
+  word-spacing:0.1vb;
+  margin-right: auto;
+  padding-left: 20px;
+}
+
+@keyframes twinkling {
+  0% { opacity: 0.8; }
+  50% { opacity: 10; color: white; }
+  100% { opacity: 0.8; }
+}
+
+.dot {
+  animation: twinkling 1s infinite;
+  color: #2a2263;
+}
+
+
+.main-title {
+  font-family: "Baloo 2";
+  line-height: 0.8;
+  font-size: 4.75rem;
+  color: #1b1b1b;
+  text-align: left;
+  white-space: nowrap; 
+}
+
+.Hello{
+  font-family: "Fredoka";
+  margin-left: 20px;
+  font-size: 2rem;
+  color: #000000;
+  line-height: 60px;
+}
+
+.Im {
+  color: #3a255a;
+  border-bottom: 3px solid #000000;
+  display: inline; 
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 105%; }
+}
+
+.main-subtitle {
+  overflow: hidden; 
+  border-right: 2px solid #6333ae; 
+  white-space: nowrap; 
+  animation: typing 3s steps(20) infinite alternate;
+  font-family: "Fredoka";
+  font-weight: 500;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.prog{
+  background-color: rgb(255, 158, 234);
+}
+
+@media (max-width: 800px) {
+  .intro {
+    box-sizing: border-box;
+    height: 400px;
+  }
+
+  .intro-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .intro-img {
+    position: relative;
+    left: 0px;
+    max-width: 400px;
+    z-index: -2;
+  }
+
+  .main-container {
+    top: 0px;
+    position: absolute;
+  }
+
+  .main-container::before {
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+  }
+
+  .main-title {
+    font-size: 2.70rem; 
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .Im {
+    color: #3a255a;
+    border-bottom: 3px solid #000000;
+    display: inline; 
+}
+
+
+
+  .main-subtitle {
+    font-size: 1.10rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    justify-self: center;
+  }
+
+  .intro-img {
+    display: none;
+  }
+}
