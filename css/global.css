@@ -12,11 +12,3 @@ h2,
 h3 {
   margin: 0px;
 }
-
-@media (max-width: 800px) {
-  body {
-    box-sizing: border-box;
-    height: 400px;
-  }
-
-}
