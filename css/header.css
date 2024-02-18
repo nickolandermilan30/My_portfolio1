@@ -67,7 +67,7 @@
   }
   .header-container img {
     display: block;
-    max-width: 100%;
+    max-width: 200px;
   }
   .header-menu a:hover {
     background: #fafafa;

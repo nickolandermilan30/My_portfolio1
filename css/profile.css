@@ -100,7 +100,7 @@
   border-radius: 6px;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 901px) {
   .profile-container {
     padding: 120px;
   }
