@@ -100,7 +100,7 @@
   border-radius: 6px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .profile-container {
     padding: 120px;
   }
@@ -122,7 +122,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .profile-container {
     display: flex;
     justify-content: center;
