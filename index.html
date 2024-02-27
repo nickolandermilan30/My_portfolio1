@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+  .main-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("./Image/Electro_element.png") no-repeat center;
+    width: 400px;
+    height: 400px;
+    opacity: 0.8;
+    z-index: -1;
+    animation: rotateBackground 3s linear infinite;
+  }
+
+  @keyframes rotateBackground {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+
+
 <head>
   <meta charset="UTF-8">
   <link href="./css/style.css" rel="stylesheet">
